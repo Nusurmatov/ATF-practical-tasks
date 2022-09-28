@@ -57,7 +57,8 @@ This task is carried out immediately after the previous one (Hurt Me Plenty).
 
 
 Nightmare! - Task 5
-To complete this task, you will need to repeat all 4 previous ones using only the MINGW64 command line (in which git works). You cannot use file managers, GUI text editors, gitk / git gui. You are allowed to use the browser only for github operations. Everything else is only through the console. This is the most difficult task in this course.
+To complete this task, you will need to repeat all 4 previous ones using only the MINGW64 command line (in which git works). You cannot use file managers, GUI text editors, 
+gitk / git gui. You are allowed to use the browser only for github operations. Everything else is only through the console. This is the most difficult task in this course.
 Commands that may be useful to you:
 echo
 cd
