@@ -32,7 +32,8 @@ while(undone)
             }
         }
 
-        Console.WriteLine($"There are maximum {maxConsecutiveUnequalchars} consecutive unequal characters.");
+        Console.WriteLine($"There are maximum {maxConsecutiveUnequalchars} " +
+            $"consecutive unequal characters.");
         undone = false;
     }
 }

@@ -12,12 +12,14 @@ while(undone)
         {
             if (baseN > 20 || baseN < 2)
             {
-                Console.WriteLine("Please enter an integer base ranging from 2 to 20, inclusive...!");
+                Console.WriteLine("Please enter an integer base ranging " +
+                    "from 2 to 20, inclusive...!");
                 Console.Write("Enter an integer: ");
             }
             else
             {
-                Console.WriteLine("The result of the converting {0} to base {1} system is {2}.", number, baseN, ConvertNumber(number, baseN));
+                Console.WriteLine("The result of the converting {0} to base {1} " +
+                    "system is {2}.", number, baseN, ConvertNumber(number, baseN));
                 undone = false;
             }
         }
@@ -35,7 +37,7 @@ string ConvertNumber(int n, int b)
     while (n > 0)
     {
         int remainder = n % b;
-        switch(remainder)
+        switch (remainder)
         {
             case 10: result = "A" + result; break;
             case 11: result = "B" + result; break;
