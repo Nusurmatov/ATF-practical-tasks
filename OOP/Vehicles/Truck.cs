@@ -11,8 +11,8 @@ namespace OOP.Vehicles
         public Truck()
         {
             this.Type = "Truck";
-            this.Engine = new Engine(power: Program.Random.Next(1000, 7000),
-                volume: 8);
+            this.Engine = new Engine(capacity: Program.Random.NextDouble() * 10, 
+                power: Program.Random.Next(1000, 7000), volume: 8);
             this.Chassis = new Chassis(wheelsNumber: 12, 
                 loadLimit: Program.Random.Next(1000, 5000));
             this.Transmission = new Transmission();
@@ -21,12 +21,12 @@ namespace OOP.Vehicles
 
         public override string GetInfo()
         {
-            return base.ToString() + $"Brand : {this.Brand}.\n";
+            return base.ToString() + $"Manufacturer: {this.Brand}.\n";
         }
 
         public override string ToString()
         {
-            return $"Type: {this.Type}, Brand: {this.Brand}.\n";
+            return $"Type: {this.Type}, Manufacturer: {this.Brand}.\n";
         }
     }
 }

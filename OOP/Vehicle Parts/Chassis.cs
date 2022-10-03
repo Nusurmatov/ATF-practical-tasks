@@ -27,7 +27,7 @@ namespace OOP.VehicleParts
             return result.ToString();
         }
 
-        public string GetChassisInfo()
+        public string GetInfo()
         {
             return "Chassis Info --- " + this.ToString();
         }

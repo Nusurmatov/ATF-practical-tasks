@@ -33,6 +33,8 @@ namespace CarPark
 
             SetShriftColor();
             Console.Write("The End...!");
+
+            SolveNetCollectionsTask();
         }
 
         private static void SetShriftColor()
@@ -48,8 +50,21 @@ namespace CarPark
             for (int i = 1; i < 11; i++)
             {
                 Console.Write($"{i} ");
-                System.Threading.Thread.Sleep(1000);
+                Thread.Sleep(1000);
             }
+        }
+
+        private static void SolveNetCollectionsTask()
+        {
+            var carPark = new NetCollections.Collection();
+            carPark.Add(new PassengerCar(), Random.Next(1, 7));
+            carPark.Add(new Truck(), Random.Next(1, 7));
+            carPark.Add(new Bus(), Random.Next(1, 7));
+            carPark.Add(new Scooter(), Random.Next(1, 7));
+
+            carPark.CreateEngineCapcityXml();
+            carPark.CreateEngineOfBusesAndTrucksXml();
+            carPark.CreateTransmissionXml();
         }
     }
 }

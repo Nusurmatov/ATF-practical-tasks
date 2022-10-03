@@ -20,9 +20,9 @@ namespace OOP.Vehicles
             var result = new System.Text.StringBuilder();
 
             result.AppendLine($"------- {this.Type} Info -------");
-            result.Append(this.Engine.GetEngineInfo());
-            result.Append(this.Chassis.GetChassisInfo());
-            result.Append(this.Transmission.GetTransmissionsInfo());
+            result.Append(this.Engine.GetInfo());
+            result.Append(this.Chassis.GetInfo());
+            result.Append(this.Transmission.GetInfo());
 
             return result.ToString();
         }

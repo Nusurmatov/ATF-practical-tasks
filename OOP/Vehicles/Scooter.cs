@@ -12,7 +12,8 @@ namespace OOP.Vehicles
         public Scooter()
         {
             this.Type = "Scooter";
-            this.Engine = new Engine(power: Program.Random.Next(30, 100));
+            this.Engine = new Engine(capacity: Program.Random.NextDouble() * 1.5,
+                power: Program.Random.Next(30, 100));
             this.Chassis = new Chassis(wheelsNumber: 2, 
                 loadLimit: Program.Random.Next(100, 200));
             this.Transmission = new Transmission();
@@ -21,12 +22,12 @@ namespace OOP.Vehicles
 
         public override string GetInfo()
         {
-            return base.ToString() + $"Brand : {this.Brand}.\n";
+            return base.ToString() + $"Manufacturer: {this.Brand}.\n";
         }
 
         public override string ToString()
         {
-            return $"Type: {this.Type}, Brand: {this.Brand}.\n";
+            return $"Type: {this.Type}, Manufacturer: {this.Brand}.\n";
         }
     }
 }

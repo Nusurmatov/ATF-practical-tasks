@@ -1,0 +1,89 @@
+<vehicles>
+	<transmission>
+		<passenger car>
+			<type>Automatic<\type>
+			<brand>Getrag<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\passenger car
+		<passenger car>
+			<type>Automatic<\type>
+			<brand>Getrag<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\passenger car
+		<passenger car>
+			<type>Automatic<\type>
+			<brand>Getrag<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\passenger car
+		<passenger car>
+			<type>Automatic<\type>
+			<brand>Getrag<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\passenger car
+		<passenger car>
+			<type>Automatic<\type>
+			<brand>Getrag<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\passenger car
+		<passenger car>
+			<type>Automatic<\type>
+			<brand>Getrag<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\passenger car
+		<truck>
+			<type>Manual<\type>
+			<brand>Hewland<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\truck
+		<bus>
+			<type>Automatic<\type>
+			<brand>Aisin<\brand>
+			<gearsNumber>4<\gearsNumber>
+		<\bus
+		<bus>
+			<type>Automatic<\type>
+			<brand>Aisin<\brand>
+			<gearsNumber>4<\gearsNumber>
+		<\bus
+		<bus>
+			<type>Automatic<\type>
+			<brand>Aisin<\brand>
+			<gearsNumber>4<\gearsNumber>
+		<\bus
+		<bus>
+			<type>Automatic<\type>
+			<brand>Aisin<\brand>
+			<gearsNumber>4<\gearsNumber>
+		<\bus
+		<bus>
+			<type>Automatic<\type>
+			<brand>Aisin<\brand>
+			<gearsNumber>4<\gearsNumber>
+		<\bus
+		<scooter>
+			<type>SemiAuto<\type>
+			<brand>Volvo<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\scooter
+		<scooter>
+			<type>SemiAuto<\type>
+			<brand>Volvo<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\scooter
+		<scooter>
+			<type>SemiAuto<\type>
+			<brand>Volvo<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\scooter
+		<scooter>
+			<type>SemiAuto<\type>
+			<brand>Volvo<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\scooter
+		<scooter>
+			<type>SemiAuto<\type>
+			<brand>Volvo<\brand>
+			<gearsNumber>8<\gearsNumber>
+		<\scooter
+	<transmission>
+<\vehicles>
