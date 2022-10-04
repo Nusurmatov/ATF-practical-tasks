@@ -1,0 +1,35 @@
+I Can Win:
+	1. Install Jenkins
+	2. Create a task which will perform the following:
+	   CLone the project (https://github.com/vitalliuss/helloci)
+	   Launch tests from the project in Java directory with the help of mvn test goal
+	3. Set up build triggers so that the task is performed every 5 minutes
+
+Brint It On
+	1. Install Jenkins
+	2. Create the task which will perform the following:
+	   Clone the project (https://github.com/vitalliuss/helloci)
+	   Launch tests from the project in Java directory with the help of mvn test goal
+	3. Set up build triggers:
+	   Launch tests not later than 5 minutes after committing in git
+       Every workday at midnight
+	4. Publish “Java\target\surefire-reports\com.github.vitalliuss.helloci.AppTest.txt” file as an artifact
+
+Hurt Me Plenty:
+	This task is based on Bring It On task.
+	1. Change the server port for 8081
+	2. Create a node and set up a server so that the job is performed on a slave-node only
+	3. Set up Job Config History and thinBackup
+
+Hardcore:
+	This task is based on Hurt Me Plenty task:
+	1. Create a user and give him permission to read-only mode for Jinkins jobs without the access to edit or change settings
+	2. Create a parametrized job HelloUser which will ask for a user name as a parameter and output "Hello, username!" in the console
+	3. Mesure unit tests code coverage with the help of the goal  mvn cobertura:cobertura and publish it on the job page as a graphic
+
+Nightmare!:
+	Perform all the previous tasks using node on Linux.
+	
+	
+	
+	This is the link for solved tasks: http://localhost:8080/job/ATF%20(Global)/job/Practical%20Tasks/
