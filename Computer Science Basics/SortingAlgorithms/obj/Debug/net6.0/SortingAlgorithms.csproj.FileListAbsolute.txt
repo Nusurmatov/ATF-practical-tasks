@@ -1,0 +1,30 @@
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.exe
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.deps.json
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.runtimeconfig.json
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.pdb
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.csproj.AssemblyReference.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.AssemblyInfoInputs.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.AssemblyInfo.cs
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\refint\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.pdb
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.genruntimeconfig.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\DotNet Development\FofCP with C#\Exers\7.Arrays\DifficultProblems\SortingAlgorithms\obj\Debug\net6.0\ref\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.exe
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.deps.json
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.runtimeconfig.json
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\bin\Debug\net6.0\SortingAlgorithms.pdb
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.csproj.AssemblyReference.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.AssemblyInfoInputs.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.AssemblyInfo.cs
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\refint\SortingAlgorithms.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.pdb
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\SortingAlgorithms.genruntimeconfig.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\SortingAlgorithms\obj\Debug\net6.0\ref\SortingAlgorithms.dll

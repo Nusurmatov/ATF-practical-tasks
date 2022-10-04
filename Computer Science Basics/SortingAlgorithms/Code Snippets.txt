@@ -1,0 +1,116 @@
+internal class Program
+{
+        static int lowerBound = -17;
+        static int upperBound = 27;
+        static int length = 37;
+        static int[] numbers = new int[length];
+        static string[] sorts = { "Bubble", "Heap", "Insertion", "Merge", "Quick", "Radix", "Selection" };
+
+    private static void Main(string[] args)
+    {
+        foreach (var sort in sorts)
+        {
+            CheckSorting(sort);
+        }        
+    }
+
+    static void CheckSorting(string sort)
+    {
+        Console.Write("Initial Array: ");
+        Sort.FillArray(numbers, lowerBound, upperBound);
+        Sort.PrintArray(numbers);
+        switch (sort.ToLower())
+        {
+            case "bubble":
+            default:
+                Sort.Bubble(numbers);
+                break;
+            case "heap":
+                Sort.Heap(numbers);
+                break;
+            case "insertion": 
+                Sort.Insertion(numbers);
+                break;
+            case "merge":
+                Sort.Merge(numbers);
+                break;
+            case "quick":
+                Sort.Quick(numbers);
+                break;
+            case "radix":
+                Sort.Radix(numbers);
+                break;
+            case "selection":
+                Sort.Selection(numbers);
+                break;
+        }
+        
+        Console.Write($"After {sort} Sort: ");
+        Sort.PrintArray(numbers);
+    }
+}
+
+
+class Sort
+{
+    public static int permutations;
+    static Sort()
+    {
+        permutations = 0;
+    }
+
+    public static void Bubble(IEnumerable<int> numbers)
+    {
+        
+    }      
+
+    public static void Heap(IEnumerable<int> numbers)
+    {
+
+    } 
+
+    public static void Insertion(IEnumerable<int> numbers)
+    {
+
+    }      
+
+    public static void Merge(IEnumerable<int> numbers)
+    {
+
+    }
+
+    public static void Quick(IEnumerable<int> numbers)
+    {
+
+    }
+
+    public static void Radix(IEnumerable<int> numbers)
+    {
+
+    } 
+
+    public static void Selection(IEnumerable<int> numbers)
+    {
+
+    }
+
+    public static void FillArray(int[] array, int lowerBound, int upperBound)
+    {
+        Random random = new Random();
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = random.Next(lowerBound, upperBound);
+        }
+    }
+
+    public static void PrintArray(int[] array)
+    {
+        Console.Write("{ ");
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write(i != array.Length - 1 ? $"{array[i]}, " : $"{array[i] }.\n");
+        }
+    }
+}
