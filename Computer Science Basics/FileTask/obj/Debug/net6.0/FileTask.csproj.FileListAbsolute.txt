@@ -1,0 +1,15 @@
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\bin\Debug\net6.0\FileTask.exe
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\bin\Debug\net6.0\FileTask.deps.json
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\bin\Debug\net6.0\FileTask.runtimeconfig.json
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\bin\Debug\net6.0\FileTask.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\bin\Debug\net6.0\FileTask.pdb
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.csproj.AssemblyReference.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.AssemblyInfoInputs.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.AssemblyInfo.cs
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.csproj.CoreCompileInputs.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\refint\FileTask.dll
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.pdb
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\FileTask.genruntimeconfig.cache
+C:\Users\Xusniddin\Desktop\Khusniddin\IT\Automed Testing\Local Repo\ATF-practical-tasks-private\Computer Science Basics\FileTask\obj\Debug\net6.0\ref\FileTask.dll

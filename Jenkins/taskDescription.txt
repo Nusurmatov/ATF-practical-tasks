@@ -1,3 +1,5 @@
+This is the link for solved tasks: http://localhost:8080/job/ATF%20(Global)/job/Practical%20Tasks
+
 I Can Win:
 	1. Install Jenkins
 	2. Create a task which will perform the following:
@@ -29,7 +31,3 @@ Hardcore:
 
 Nightmare!:
 	Perform all the previous tasks using node on Linux.
-	
-	
-	
-	This is the link for solved tasks: http://localhost:8080/job/ATF%20(Global)/job/Practical%20Tasks/

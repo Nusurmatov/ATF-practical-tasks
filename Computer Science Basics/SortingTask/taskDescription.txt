@@ -1,0 +1,7 @@
+Problem Statement:
+N people are taking part in the donut eating competition. To win, you need 
+to eat as many donuts as possible in 10 minutes. Display on the screen the 
+result of 3 winners and the worst result. (Hint: The program allocates dynamic 
+memory for an array of n elements and requests the array from a keyboard. Try 
+sorting the data using different methods. The case when several participants 
+ate the same number of donuts should not be considered).
