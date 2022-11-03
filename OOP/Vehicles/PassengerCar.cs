@@ -6,7 +6,9 @@ namespace OOP.Vehicles
     public class PassengerCar : Vehicle
     {
         public enum CarBrand { BMW, Toyota, Tesla, Chevrolet, Mustang }
+     
         private CarBrand Brand { get; }
+        
         public PassengerCar()
         {
             this.Type = "Passenger Car";

@@ -2,10 +2,24 @@ using InterfacesAndAbstractClasses;
 
 namespace Ifyables
 {
-    public class Drone: IFlyable
+    public class Drone : IFlyable
     {
+        private int _speed = Program.Random.Next(3, 6);  // km per minute
+     
         private Coordinate Currentposition { get; set; }
-        public int Speed { get; private set; } = Program.Random.Next(3, 6);  // km per minute
+       
+        public int Speed
+        {
+            get => _speed;
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Speed cannot be negative");
+                }
+                _speed = value;
+            }
+        }
 
         public void FlyTo(Coordinate point)
         {
@@ -56,6 +70,7 @@ namespace Ifyables
                     "more than 1000 km.");
             }
         }   
+     
         public int GetFlyTime(Coordinate point)
         {
             int distance = Coordinate.GetDistance(this.Currentposition, point);

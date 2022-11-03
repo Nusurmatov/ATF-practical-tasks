@@ -5,6 +5,7 @@ namespace Ifyables
     public class Bird : IFlyable
     {
         private Coordinate Currentposition { get; set; } = new Coordinate();
+        
         public int Speed { get; } = Program.Random.Next(1, 21);  // cannot be changed
 
         // A bird loses 10% Stamina in every 10 km. When its Stamina level is 30%, 

@@ -5,8 +5,11 @@ namespace OOP.Vehicles
     public abstract class Vehicle
     {
         public string Type { get; protected set; } = "Vehicle";  
+    
         public Engine Engine { get; protected set; } = new Engine();
+        
         public Chassis Chassis { get; protected set; } = new Chassis();
+        
         public Transmission Transmission { get;  protected set; } 
             = new Transmission();
 

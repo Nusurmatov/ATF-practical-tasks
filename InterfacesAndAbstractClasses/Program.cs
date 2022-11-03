@@ -5,6 +5,7 @@ namespace InterfacesAndAbstractClasses
     public static class Program
     {
         public static Random Random { get; } = new Random();
+        
         public static void Main(string[] args)
         {
             Console.Clear();

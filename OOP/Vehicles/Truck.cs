@@ -6,6 +6,7 @@ namespace OOP.Vehicles
     public class Truck : Vehicle
     {
         public enum TruckBrand { Freighliner, MAN, Volvo, Isuzu }
+      
         private TruckBrand Brand { get; }
 
         public Truck()

@@ -5,7 +5,8 @@ namespace Ifyables
     public class Airplane : IFlyable
     {
         private Coordinate Currentposition { get; set; }
-        public int Speed { get; private set; } = 200;
+      
+        public int Speed { get; private set; } = 200;  // initial speed
 
         public void FlyTo(Coordinate point)
         {

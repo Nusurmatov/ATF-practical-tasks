@@ -1,40 +1,56 @@
-﻿Console.Write("Please, enter some text: ");
-string text = Console.ReadLine() ?? String.Empty;
-
-bool undone = true;
-while(undone)
+﻿namespace DevelopmentAndBuildTools
 {
-    if (text == String.Empty)
+    public class Program
     {
-        Console.Clear();
-        Console.WriteLine("Nothing Entered... ");
-        Console.Write("Please, do not play, enter something: ");
-        text = Console.ReadLine() ?? String.Empty;
-    }
-    else
-    {
-        byte maxConsecutiveUnequalchars = 0;
-        byte count = 1;
-        for (int i = 0; i < text.Length - 1; i++)
+        static void Main(string[] args)
         {
-            if (text[i+1] != text[i])
-            {
-                count++;
-            }
-            else
-            {
-                count = 1;
-            }
+            Console.Write("Please, enter some text: ");
+            string text = Console.ReadLine() ?? String.Empty;
 
-            if (count > maxConsecutiveUnequalchars)
-            {
-                maxConsecutiveUnequalchars = count;
-            }
+            byte max = GetTotalConsecutiveUnequalChars(text);
+            Console.WriteLine($"There are maximum {max} consecutive unequal characters.");
         }
 
-        Console.WriteLine($"There are maximum {maxConsecutiveUnequalchars} " +
-            $"consecutive unequal characters.");
-        undone = false;
+        static byte GetTotalConsecutiveUnequalChars(string text)
+        {
+            bool undone = true;
+            byte max = 0;
+            while (undone)
+            {
+                if (text == String.Empty)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Nothing Entered... ");
+                    Console.Write("Please, do not play, enter something: ");
+                    text = Console.ReadLine() ?? String.Empty;
+                }
+                else
+                {
+                    byte count = 1;
+                    for (int i = 0; i < text.Length - 1; i++)
+                    {
+                        if (text[i + 1] != text[i])
+                        {
+                            count++;
+                        }
+                        else
+                        {
+                            count = 1;
+                        }
+
+                        if (count > max)
+                        {
+                            max = count;
+                        }
+                    }
+
+                    undone = false;
+                }
+            }
+
+            return max;
+        }
+
     }
 }
 

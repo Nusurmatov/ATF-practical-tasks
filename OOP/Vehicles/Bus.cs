@@ -6,6 +6,7 @@ namespace OOP.Vehicles
     public class Bus : Vehicle
     {
         public enum BusBrand { Kamaz, MAN, Volksvagen, Scania }
+        
         private BusBrand Brand { get; }
 
         public Bus()
