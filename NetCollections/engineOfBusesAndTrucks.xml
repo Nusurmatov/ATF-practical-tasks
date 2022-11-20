@@ -1,56 +1,101 @@
 <vehicles>
 	<truck>
 		<engine>
-			<capacity>0.71<\capacity>
-			<power>4336<\power>
+			<capacity>2.31<\capacity>
+			<power>3765<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>G111GPP<\serialNumber
+			<serialNumber>Z528PKG<\serialNumber
+		<engine>
+	<\truck
+	<truck>
+		<engine>
+			<capacity>2.31<\capacity>
+			<power>3765<\power>
+			<volume>8<\volume>
+			<type>Electric<\type>
+			<serialNumber>Z528PKG<\serialNumber
+		<engine>
+	<\truck
+	<truck>
+		<engine>
+			<capacity>2.31<\capacity>
+			<power>3765<\power>
+			<volume>8<\volume>
+			<type>Electric<\type>
+			<serialNumber>Z528PKG<\serialNumber
+		<engine>
+	<\truck
+	<truck>
+		<engine>
+			<capacity>2.31<\capacity>
+			<power>3765<\power>
+			<volume>8<\volume>
+			<type>Electric<\type>
+			<serialNumber>Z528PKG<\serialNumber
+		<engine>
+	<\truck
+	<truck>
+		<engine>
+			<capacity>2.31<\capacity>
+			<power>3765<\power>
+			<volume>8<\volume>
+			<type>Electric<\type>
+			<serialNumber>Z528PKG<\serialNumber
+		<engine>
+	<\truck
+	<truck>
+		<engine>
+			<capacity>2.31<\capacity>
+			<power>3765<\power>
+			<volume>8<\volume>
+			<type>Electric<\type>
+			<serialNumber>Z528PKG<\serialNumber
 		<engine>
 	<\truck
 	<bus>
 		<engine>
-			<capacity>2.03<\capacity>
-			<power>1735<\power>
+			<capacity>0.44<\capacity>
+			<power>1038<\power>
 			<volume>8<\volume>
-			<type>Gas<\type>
-			<serialNumber>V64UJS<\serialNumber
+			<type>Electric<\type>
+			<serialNumber>W125WHB<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>2.03<\capacity>
-			<power>1735<\power>
+			<capacity>0.44<\capacity>
+			<power>1038<\power>
 			<volume>8<\volume>
-			<type>Gas<\type>
-			<serialNumber>V64UJS<\serialNumber
+			<type>Electric<\type>
+			<serialNumber>W125WHB<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>2.03<\capacity>
-			<power>1735<\power>
+			<capacity>0.44<\capacity>
+			<power>1038<\power>
 			<volume>8<\volume>
-			<type>Gas<\type>
-			<serialNumber>V64UJS<\serialNumber
+			<type>Electric<\type>
+			<serialNumber>W125WHB<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>2.03<\capacity>
-			<power>1735<\power>
+			<capacity>0.44<\capacity>
+			<power>1038<\power>
 			<volume>8<\volume>
-			<type>Gas<\type>
-			<serialNumber>V64UJS<\serialNumber
+			<type>Electric<\type>
+			<serialNumber>W125WHB<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>2.03<\capacity>
-			<power>1735<\power>
+			<capacity>0.44<\capacity>
+			<power>1038<\power>
 			<volume>8<\volume>
-			<type>Gas<\type>
-			<serialNumber>V64UJS<\serialNumber
+			<type>Electric<\type>
+			<serialNumber>W125WHB<\serialNumber
 		<engine>
 	<\bus
 <\vehicles>

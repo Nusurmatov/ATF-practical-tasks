@@ -1,4 +1,5 @@
 ﻿using CarPark;
+using OOP.Exceptions;
 
 namespace OOP.VehicleParts
 {
@@ -15,7 +16,7 @@ namespace OOP.VehicleParts
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Wheels number cannot be negative");
+                    throw new InitializationException("Wheels number cannot be negative");
                 }
                 _wheelsNumber = value;
             }
@@ -31,7 +32,7 @@ namespace OOP.VehicleParts
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Load limit cannot be negative");
+                    throw new InitializationException("Load limit cannot be negative");
                 }
                 _loadLimit = value;
             }

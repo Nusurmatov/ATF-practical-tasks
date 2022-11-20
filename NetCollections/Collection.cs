@@ -35,7 +35,8 @@ namespace NetCollections
 
         public void CreateEngineCapcityXml()
         {
-            using (var writer = new StreamWriter("Net Collections task\\engineCapacity.xml"))
+            using (var writer = new StreamWriter("C:\\Users\\Xusniddin\\Desktop\\Khusniddin\\IT" +
+                "\\Automed Testing\\Local Repo\\ATF-practical-tasks-private\\NetCollections\\engineCapacity.xml"))
             {
                 writer.WriteLine("<vehicles>");
 
@@ -63,7 +64,8 @@ namespace NetCollections
 
         public void CreateEngineOfBusesAndTrucksXml()
         {
-            using (var writer = new StreamWriter("Net Collections task\\engineOfBusesAndTrucks.xml"))
+            using (var writer = new StreamWriter("C:\\Users\\Xusniddin\\Desktop\\Khusniddin\\IT" +
+                "\\Automed Testing\\Local Repo\\ATF-practical-tasks-private\\NetCollections\\engineOfBusesAndTrucks.xml"))
             {
                 writer.WriteLine("<vehicles>");
 
@@ -83,7 +85,8 @@ namespace NetCollections
 
         public void CreateTransmissionXml()
         {
-            using (var writer = new StreamWriter("Net Collections task\\transmission.xml"))
+            using (var writer = new StreamWriter("C:\\Users\\Xusniddin\\Desktop\\Khusniddin\\IT" +
+                "\\Automed Testing\\Local Repo\\ATF-practical-tasks-private\\NetCollections\\transmission.xml"))
             {
                 writer.WriteLine("<vehicles>");
                 writer.WriteLine("\t<transmission>");

@@ -9,7 +9,9 @@ namespace OOP.Vehicles
 
         private ScooterBrand Brand { get; }
 
-        public Scooter()
+        public Scooter() : this((ScooterBrand) Program.Random.Next(7)) { }
+
+        public Scooter(ScooterBrand brand)
         {
             this.Type = "Scooter";
             this.Engine = new Engine(capacity: Program.Random.NextDouble() * 1.5,
@@ -17,7 +19,7 @@ namespace OOP.Vehicles
             this.Chassis = new Chassis(wheelsNumber: 2, 
                 loadLimit: Program.Random.Next(100, 200));
             this.Transmission = new Transmission();
-            this.Brand = (ScooterBrand) Program.Random.Next(7);
+            this.Brand = brand;
         }
 
         public override string GetInfo()
@@ -29,5 +31,7 @@ namespace OOP.Vehicles
         {
             return $"Type: {this.Type}, Manufacturer: {this.Brand}.\n";
         }
+
+        public ScooterBrand GetBrand() => this.Brand;
     }
 }

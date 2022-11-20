@@ -1,4 +1,5 @@
 ﻿using CarPark;
+using OOP.Exceptions;
 
 namespace OOP.VehicleParts
 {
@@ -19,7 +20,7 @@ namespace OOP.VehicleParts
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Engine Capacity cannot be negative");
+                    throw new InitializationException("Engine Capacity cannot be negative");
                 }
                 _capacity = value;
             }
@@ -32,7 +33,7 @@ namespace OOP.VehicleParts
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Engine Power cannot be negative");
+                    throw new InitializationException("Engine Power cannot be negative");
                 }
                 _power = value;
             }
@@ -49,7 +50,7 @@ namespace OOP.VehicleParts
                 }
                 else
                 {
-                    throw new ArgumentException("Volume should be 4, 6 or 8!");
+                    throw new InitializationException("Volume should be 4, 6 or 8!");
                 }
             }
         }

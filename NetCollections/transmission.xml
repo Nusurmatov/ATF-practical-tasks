@@ -2,88 +2,108 @@
 	<transmission>
 		<passenger car>
 			<type>Automatic<\type>
-			<brand>Getrag<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<brand>Aisin<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\passenger car
 		<passenger car>
 			<type>Automatic<\type>
-			<brand>Getrag<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<brand>Aisin<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\passenger car
 		<passenger car>
 			<type>Automatic<\type>
-			<brand>Getrag<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<brand>Aisin<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\passenger car
 		<passenger car>
 			<type>Automatic<\type>
-			<brand>Getrag<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<brand>Aisin<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\passenger car
 		<passenger car>
 			<type>Automatic<\type>
-			<brand>Getrag<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<brand>Aisin<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\passenger car
 		<passenger car>
 			<type>Automatic<\type>
-			<brand>Getrag<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<brand>Aisin<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\passenger car
 		<truck>
-			<type>Manual<\type>
+			<type>SemiAuto<\type>
 			<brand>Hewland<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<gearsNumber>5<\gearsNumber>
+		<\truck
+		<truck>
+			<type>SemiAuto<\type>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
+		<\truck
+		<truck>
+			<type>SemiAuto<\type>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
+		<\truck
+		<truck>
+			<type>SemiAuto<\type>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
+		<\truck
+		<truck>
+			<type>SemiAuto<\type>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
+		<\truck
+		<truck>
+			<type>SemiAuto<\type>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\truck
 		<bus>
 			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>4<\gearsNumber>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>4<\gearsNumber>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>4<\gearsNumber>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>4<\gearsNumber>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>4<\gearsNumber>
+			<brand>Hewland<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\bus
 		<scooter>
-			<type>SemiAuto<\type>
+			<type>Manual<\type>
 			<brand>Volvo<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<gearsNumber>5<\gearsNumber>
 		<\scooter
 		<scooter>
-			<type>SemiAuto<\type>
+			<type>Manual<\type>
 			<brand>Volvo<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<gearsNumber>5<\gearsNumber>
 		<\scooter
 		<scooter>
-			<type>SemiAuto<\type>
+			<type>Manual<\type>
 			<brand>Volvo<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<gearsNumber>5<\gearsNumber>
 		<\scooter
 		<scooter>
-			<type>SemiAuto<\type>
+			<type>Manual<\type>
 			<brand>Volvo<\brand>
-			<gearsNumber>8<\gearsNumber>
-		<\scooter
-		<scooter>
-			<type>SemiAuto<\type>
-			<brand>Volvo<\brand>
-			<gearsNumber>8<\gearsNumber>
+			<gearsNumber>5<\gearsNumber>
 		<\scooter
 	<transmission>
 <\vehicles>
