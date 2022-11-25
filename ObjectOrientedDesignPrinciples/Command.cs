@@ -7,7 +7,7 @@ namespace ObjectOrientedDesignPrinciples
 
     public class CountCarBrands : ICommand
     {
-        private CarInformation? _carInfo;
+        private readonly CarInformation? _carInfo;
 
         public CountCarBrands(CarInformation carInfo)
         {
@@ -22,7 +22,7 @@ namespace ObjectOrientedDesignPrinciples
 
     public class CountTotalCars : ICommand
     {
-        private CarInformation? _carInfo;
+        private readonly CarInformation? _carInfo;
 
         public CountTotalCars(CarInformation carInfo)
         {
@@ -37,7 +37,7 @@ namespace ObjectOrientedDesignPrinciples
 
     public class AverageCarPrice : ICommand
     {
-        private CarInformation? _carInfo;
+        private readonly CarInformation? _carInfo;
 
         public AverageCarPrice(CarInformation carInfo)
         {
@@ -52,9 +52,9 @@ namespace ObjectOrientedDesignPrinciples
 
     public class AverageCarPriceByBrand : ICommand
     {
-        private CarInformation? _carInfo;
+        private readonly CarInformation? _carInfo;
 
-        private string brandName;
+        private readonly string brandName;
 
         public AverageCarPriceByBrand(CarInformation carInfo, string brandName)
         {
@@ -78,17 +78,12 @@ namespace ObjectOrientedDesignPrinciples
 
     public class Invoker
     {
-        private ICommand? _command;
+        private readonly ICommand? _command;
 
         public Invoker(ICommand command)
         {
             this._command = command;
         }        
-
-        public void SetCarInfo(Car car)
-        {
-
-        }
 
         public void Invoke()
         {
@@ -103,11 +98,7 @@ namespace ObjectOrientedDesignPrinciples
 
     public class CarInformation
     {
-        private static Dictionary<string, List<string>>? CarData;
-
-        private static Dictionary<string, decimal>? CarBrandTotalPrice;
-
-        private static Car? _car;
+        private readonly Car _car;
 
         public CarInformation(Car car)
         {
@@ -115,44 +106,53 @@ namespace ObjectOrientedDesignPrinciples
             
             for (int i = 0; i < _car.GetQuantity(); i++)
             {
-                if (CarData != null && CarBrandTotalPrice != null && CarData.ContainsKey(_car.GetBrand()))
+                if (_car.CarData != null && _car.CarBrandPriceByBrand != null && _car.CarData.ContainsKey(_car.GetBrand()))
                 {
-                    CarData[_car.GetBrand()].Add(_car.GetModel());
-                    CarBrandTotalPrice[_car.GetBrand()] += _car.GetPrice();
+                    _car.CarData[_car.GetBrand()].Add(_car.GetModel());
+                    _car.CarBrandPriceByBrand[_car.GetBrand()].Add(_car.GetPrice());
                 }
                 else
                 {
-                    CarData?.Add(_car.GetBrand(), new List<string> { _car.GetModel() } );
-                    CarBrandTotalPrice?.Add(_car.GetBrand(), _car.GetPrice());
+                    _car.CarData?.Add(_car.GetBrand(), new List<string> { _car.GetModel() } );
+                    _car.CarBrandPriceByBrand?.Add(_car.GetBrand(), new List<decimal> { _car.GetPrice() } );
                 }
             }
         }
 
         public int GetBrandCount()
         {
-            if (CarData != null)
+            if (_car.CarData != null)
             {
-                return CarData.Keys.Count;
+                return _car.CarData.Keys.Count;
             }
 
             return 0;
         }
 
-        public int GetTotalCarNumber() => Car.TotalNumbreOfCars;
+        public int GetTotalCarNumber() => _car.TotalNumberOfCars;
 
-        public decimal GetAveragePrice() => Car.AverageCarPrice;
+        public decimal GetAveragePrice()
+        {
+            _car.CarPrices.Sort();
+
+            return _car.CarPrices[_car.CarPrices.Count / 2];
+        }
 
         public decimal GetAveragePriceByBrand(string brandName)
-        { 
-            if (CarData != null && CarBrandTotalPrice != null)
+        {
+            brandName = brandName.Trim().ToUpperInvariant();
+
+            if (_car.CarData != null && _car.CarBrandPriceByBrand != null)
             {
-                if (CarBrandTotalPrice.ContainsKey(brandName))
+                if (_car.CarBrandPriceByBrand.ContainsKey(brandName))
                 {
-                    foreach (var brand in CarBrandTotalPrice.Keys)
+                    foreach (var brand in _car.CarBrandPriceByBrand.Keys)
                     {
-                        if (brandName.Trim().ToUpperInvariant() == brand)
+                        if (brandName == brand)
                         {
-                            return CarBrandTotalPrice[brand] / CarData[brand].Count;
+                            _car.CarBrandPriceByBrand[brandName].Sort();
+
+                            return _car.CarBrandPriceByBrand[brandName][_car.CarBrandPriceByBrand.Count / 2];
                         }
                     }
                 }

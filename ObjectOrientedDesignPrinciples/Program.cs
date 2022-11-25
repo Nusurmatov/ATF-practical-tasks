@@ -2,12 +2,14 @@
 {
     public class ConsoleCarCollection
     {
+        protected ConsoleCarCollection() { }
+
         private static bool _undone = true;
         private static byte _option;
         
         private static CarInformation _carInfo = new CarInformation(Car.GetInstance());
 
-        private static void Main()
+        public static void Main()
         {
             Console.Clear();
             ReceiveCarInformation();
@@ -20,7 +22,7 @@
             }
         }
 
-        static void PrintMessage()
+        public static void PrintMessage()
         {
             Console.WriteLine("To add a car to the collection, enter 1;");
             Console.WriteLine("To see the number of car brands, enter 2;");
@@ -31,16 +33,16 @@
             Console.Write("And your option is : ");
         }
 
-        static void ReceiveCommand()
+        public static void ReceiveCommand()
         {
-            if (byte.TryParse(Console.ReadLine(), out _option) == false)
+            if (!byte.TryParse(Console.ReadLine(), out _option))
             {
                 Console.Clear();
                 Console.WriteLine("Invalid option, please try again!");
             }
         }
 
-        static void PerformCommand()
+        public static void PerformCommand()
         {
             Invoker invoker;
 
@@ -75,8 +77,9 @@
             }
         }
 
-        static void ReceiveCarInformation()
+        public static void ReceiveCarInformation()
         {
+            Console.Clear();
             Car car = Car.GetInstance();
 
             car.SetBrand(ReceiveStringFromConsole("Enter a car brand: "));

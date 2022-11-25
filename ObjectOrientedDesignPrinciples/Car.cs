@@ -2,17 +2,23 @@ namespace ObjectOrientedDesignPrinciples
 {
     public sealed class Car
     {
-        private static Car? _instance;  
+        private static  Car? _instance;  
 
-        private static string _brand = "None";
+        private string _brand = "None";
 
-        private static string _model = "None";
+        private string _model = "None";
         
-        private static int _quantity;
+        private int _quantity;
 
-        private static decimal _price;
-        
-        public static string Brand 
+        private decimal _price = 0.0m;
+
+        public Dictionary<string, List<string>>? CarData { get; private set; } = new Dictionary<string, List<string>>();
+
+        public Dictionary<string, List<decimal>>? CarBrandPriceByBrand { get; private set; } = new Dictionary<string, List<decimal>>();
+
+        public List<decimal> CarPrices { get; private set; } = new List<decimal>();
+
+        public string Brand 
         {
             get => _brand;
             set 
@@ -26,7 +32,7 @@ namespace ObjectOrientedDesignPrinciples
             } 
         }
 
-        public static string Model 
+        public string Model 
         {
             get => _model;
             set 
@@ -40,7 +46,7 @@ namespace ObjectOrientedDesignPrinciples
             } 
         }
 
-        public static int Quantity
+        public int Quantity
         {
             get => _quantity;
             set
@@ -54,7 +60,7 @@ namespace ObjectOrientedDesignPrinciples
             }
         }
 
-        public static decimal Price
+        public decimal Price
         {
             get => _price;
             set
@@ -63,14 +69,11 @@ namespace ObjectOrientedDesignPrinciples
                 {
                     throw new ArgumentException("Price cannot be negative!");
                 }
+                _price = value;
             }
         }
 
-        public static int TotalNumbreOfCars { get; private set; }
-
-        public static decimal AverageCarPrice { get; private set; }
-
-        private static decimal TotalCarPrice { get; set; }
+        public int TotalNumberOfCars { get; private set; } = 0;
 
         private Car() { }
 
@@ -80,14 +83,13 @@ namespace ObjectOrientedDesignPrinciples
         
         public void SetQuantity(int quantity)
         {
-            TotalNumbreOfCars += quantity;
+            TotalNumberOfCars += quantity;
             Quantity = quantity;
         }
 
         public void SetPrice(decimal price)
         {
-            TotalCarPrice += price;
-            AverageCarPrice = (TotalNumbreOfCars != 0) ? TotalCarPrice / TotalNumbreOfCars : price; 
+            CarPrices.Add(price);
             Price = price;
         } 
 
