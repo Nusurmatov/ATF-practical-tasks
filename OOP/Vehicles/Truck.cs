@@ -22,15 +22,17 @@ namespace OOP.Vehicles
             this.Brand = brand;
         }
 
-        public override string GetInfo()
+        public Truck(TruckBrand brand, Chassis chassis, Engine engine, Transmission transmission)
         {
-            return base.ToString() + $"Manufacturer: {this.Brand}.\n";
+            this.Brand = brand;
+            this.Chassis = chassis;
+            this.Engine = engine;
+            this.Transmission = transmission;
         }
 
-        public override string ToString()
-        {
-            return $"Type: {this.Type}, Manufacturer: {this.Brand}.\n";
-        }
+        public override string GetInfo() => $"{base.ToString()}Manufacturer: {this.Brand}.\n";
+
+        public override string ToString() => $"Type: {this.Type}, Manufacturer: {this.Brand}.\n";
 
         public TruckBrand GetBrand() => this.Brand;
     }

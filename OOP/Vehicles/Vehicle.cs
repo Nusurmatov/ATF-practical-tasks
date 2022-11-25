@@ -13,10 +13,7 @@ namespace OOP.Vehicles
         public Transmission Transmission { get;  protected set; } 
             = new Transmission();
 
-        public virtual string GetInfo()
-        {
-            return this.ToString();
-        }
+        public virtual string GetInfo() => this.ToString();
 
         public override string ToString()
         {

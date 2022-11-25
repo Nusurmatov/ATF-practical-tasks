@@ -22,10 +22,7 @@ namespace OOP.VehicleParts
             this.GearsNumber = Program.Random.Next(4, 9);
         }
 
-        public string GetInfo()
-        {
-            return "Transmimssion Info --- " + this.ToString();
-        }
+        public string GetInfo() => $"Transmimssion Info --- {this}";
 
         public override string ToString()
         {

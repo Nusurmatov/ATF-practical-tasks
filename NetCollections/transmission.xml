@@ -1,109 +1,114 @@
 <vehicles>
 	<transmission>
 		<passenger car>
-			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>7<\gearsNumber>
+			<type>SemiAuto<\type>
+			<brand>Claas<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\passenger car
 		<passenger car>
-			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>7<\gearsNumber>
+			<type>SemiAuto<\type>
+			<brand>Claas<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\passenger car
 		<passenger car>
-			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>7<\gearsNumber>
+			<type>SemiAuto<\type>
+			<brand>Claas<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\passenger car
 		<passenger car>
-			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>7<\gearsNumber>
-		<\passenger car
-		<passenger car>
-			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>7<\gearsNumber>
-		<\passenger car
-		<passenger car>
-			<type>Automatic<\type>
-			<brand>Aisin<\brand>
-			<gearsNumber>7<\gearsNumber>
+			<type>SemiAuto<\type>
+			<brand>Claas<\brand>
+			<gearsNumber>5<\gearsNumber>
 		<\passenger car
 		<truck>
 			<type>SemiAuto<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\truck
 		<truck>
 			<type>SemiAuto<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\truck
 		<truck>
 			<type>SemiAuto<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\truck
 		<truck>
 			<type>SemiAuto<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\truck
 		<truck>
 			<type>SemiAuto<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\truck
 		<truck>
 			<type>SemiAuto<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>7<\gearsNumber>
 		<\truck
 		<bus>
 			<type>Automatic<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>4<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>4<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>4<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>4<\gearsNumber>
 		<\bus
 		<bus>
 			<type>Automatic<\type>
-			<brand>Hewland<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>4<\gearsNumber>
+		<\bus
+		<bus>
+			<type>Automatic<\type>
+			<brand>LiuGong<\brand>
+			<gearsNumber>4<\gearsNumber>
 		<\bus
 		<scooter>
 			<type>Manual<\type>
-			<brand>Volvo<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>6<\gearsNumber>
 		<\scooter
 		<scooter>
 			<type>Manual<\type>
-			<brand>Volvo<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>6<\gearsNumber>
 		<\scooter
 		<scooter>
 			<type>Manual<\type>
-			<brand>Volvo<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>6<\gearsNumber>
 		<\scooter
 		<scooter>
 			<type>Manual<\type>
-			<brand>Volvo<\brand>
-			<gearsNumber>5<\gearsNumber>
+			<brand>LiuGong<\brand>
+			<gearsNumber>6<\gearsNumber>
+		<\scooter
+		<scooter>
+			<type>Manual<\type>
+			<brand>LiuGong<\brand>
+			<gearsNumber>6<\gearsNumber>
+		<\scooter
+		<scooter>
+			<type>Manual<\type>
+			<brand>LiuGong<\brand>
+			<gearsNumber>6<\gearsNumber>
 		<\scooter
 	<transmission>
 <\vehicles>

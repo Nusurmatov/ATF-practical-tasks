@@ -1,101 +1,110 @@
 <vehicles>
 	<truck>
 		<engine>
-			<capacity>2.31<\capacity>
-			<power>3765<\power>
+			<capacity>0.7<\capacity>
+			<power>1212<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>Z528PKG<\serialNumber
+			<serialNumber>N318KUZ<\serialNumber
 		<engine>
 	<\truck
 	<truck>
 		<engine>
-			<capacity>2.31<\capacity>
-			<power>3765<\power>
+			<capacity>0.7<\capacity>
+			<power>1212<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>Z528PKG<\serialNumber
+			<serialNumber>N318KUZ<\serialNumber
 		<engine>
 	<\truck
 	<truck>
 		<engine>
-			<capacity>2.31<\capacity>
-			<power>3765<\power>
+			<capacity>0.7<\capacity>
+			<power>1212<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>Z528PKG<\serialNumber
+			<serialNumber>N318KUZ<\serialNumber
 		<engine>
 	<\truck
 	<truck>
 		<engine>
-			<capacity>2.31<\capacity>
-			<power>3765<\power>
+			<capacity>0.7<\capacity>
+			<power>1212<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>Z528PKG<\serialNumber
+			<serialNumber>N318KUZ<\serialNumber
 		<engine>
 	<\truck
 	<truck>
 		<engine>
-			<capacity>2.31<\capacity>
-			<power>3765<\power>
+			<capacity>0.7<\capacity>
+			<power>1212<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>Z528PKG<\serialNumber
+			<serialNumber>N318KUZ<\serialNumber
 		<engine>
 	<\truck
 	<truck>
 		<engine>
-			<capacity>2.31<\capacity>
-			<power>3765<\power>
+			<capacity>0.7<\capacity>
+			<power>1212<\power>
 			<volume>8<\volume>
 			<type>Electric<\type>
-			<serialNumber>Z528PKG<\serialNumber
+			<serialNumber>N318KUZ<\serialNumber
 		<engine>
 	<\truck
 	<bus>
 		<engine>
-			<capacity>0.44<\capacity>
-			<power>1038<\power>
+			<capacity>2.48<\capacity>
+			<power>2901<\power>
 			<volume>8<\volume>
-			<type>Electric<\type>
-			<serialNumber>W125WHB<\serialNumber
+			<type>Diesel<\type>
+			<serialNumber>J54OJV<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>0.44<\capacity>
-			<power>1038<\power>
+			<capacity>2.48<\capacity>
+			<power>2901<\power>
 			<volume>8<\volume>
-			<type>Electric<\type>
-			<serialNumber>W125WHB<\serialNumber
+			<type>Diesel<\type>
+			<serialNumber>J54OJV<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>0.44<\capacity>
-			<power>1038<\power>
+			<capacity>2.48<\capacity>
+			<power>2901<\power>
 			<volume>8<\volume>
-			<type>Electric<\type>
-			<serialNumber>W125WHB<\serialNumber
+			<type>Diesel<\type>
+			<serialNumber>J54OJV<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>0.44<\capacity>
-			<power>1038<\power>
+			<capacity>2.48<\capacity>
+			<power>2901<\power>
 			<volume>8<\volume>
-			<type>Electric<\type>
-			<serialNumber>W125WHB<\serialNumber
+			<type>Diesel<\type>
+			<serialNumber>J54OJV<\serialNumber
 		<engine>
 	<\bus
 	<bus>
 		<engine>
-			<capacity>0.44<\capacity>
-			<power>1038<\power>
+			<capacity>2.48<\capacity>
+			<power>2901<\power>
 			<volume>8<\volume>
-			<type>Electric<\type>
-			<serialNumber>W125WHB<\serialNumber
+			<type>Diesel<\type>
+			<serialNumber>J54OJV<\serialNumber
+		<engine>
+	<\bus
+	<bus>
+		<engine>
+			<capacity>2.48<\capacity>
+			<power>2901<\power>
+			<volume>8<\volume>
+			<type>Diesel<\type>
+			<serialNumber>J54OJV<\serialNumber
 		<engine>
 	<\bus
 <\vehicles>

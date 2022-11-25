@@ -14,9 +14,9 @@ namespace OOP.VehicleParts
             get => _wheelsNumber; 
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
-                    throw new InitializationException("Wheels number cannot be negative");
+                    throw new InitializationException("Wheels number must be non-negative");
                 }
                 _wheelsNumber = value;
             }
@@ -57,10 +57,7 @@ namespace OOP.VehicleParts
             return result.ToString();
         }
 
-        public string GetInfo()
-        {
-            return "Chassis Info --- " + this.ToString();
-        }
+        public string GetInfo() => $"Chassis Info --- {this}";
 
         public override string ToString()
         {

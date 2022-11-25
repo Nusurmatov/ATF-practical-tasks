@@ -5,38 +5,39 @@ namespace NetCollections
 {
     public class Collection
     {
-        List<PassengerCar> Cars = new List<PassengerCar>();
-        List<Truck> Trucks = new List<Truck>();
-        List<Bus> Buses = new List<Bus>();
-        List<Scooter> Scooters = new List<Scooter>();
+        readonly List<PassengerCar> Cars = new List<PassengerCar>();
+       
+        readonly List<Truck> Trucks = new List<Truck>();
+        
+        readonly List<Bus> Buses = new List<Bus>();
+        
+        readonly List<Scooter> Scooters = new List<Scooter>();
             
         public void Add(Vehicle vehicle, int number = 1) 
         {
-            try
+
+            for (int i = 0; i < number; i++)
             {
-                for (int i = 0; i < number; i++)
+                if (vehicle is PassengerCar car)
                 {
-                    if (vehicle is PassengerCar car)
-                    {
-                        this.Cars.Add(car);
-                    }
-                    else if (vehicle is Truck truck)
-                    {
-                        this.Trucks.Add(truck);
-                    }
-                    else if (vehicle is Bus bus)
-                    {
-                        this.Buses.Add(bus);
-                    }
-                    else if (vehicle is Scooter scooter) 
-                    {
-                        this.Scooters.Add(scooter);
-                    }
+                    this.Cars.Add(car);
                 }
-            }
-            catch
-            {
-                throw new AddException("Cannot add!");
+                else if (vehicle is Truck truck)
+                {
+                    this.Trucks.Add(truck);
+                }
+                else if (vehicle is Bus bus)
+                {
+                    this.Buses.Add(bus);
+                }
+                else if (vehicle is Scooter scooter) 
+                {
+                    this.Scooters.Add(scooter);
+                }
+                else
+                {
+                    throw new AddException("Cannot add a car");
+                }
             }
         }
 
@@ -58,7 +59,6 @@ namespace NetCollections
                             return FindCar(PassengerCar.CarBrand.Chevrolet);
                         case "mustang":
                             return FindCar(PassengerCar.CarBrand.Mustang);
-
                         case "freighliner":
                             return FindTruck(Truck.TruckBrand.Freighliner);
                         case "man":
@@ -67,14 +67,12 @@ namespace NetCollections
                             return FindTruck(Truck.TruckBrand.Volvo);
                         case "isuzu":
                             return FindTruck(Truck.TruckBrand.Isuzu);
-
                         case "kamaz":
                             return FindBus(Bus.BusBrand.Kamaz);
                         case "volsvagen":
                             return FindBus(Bus.BusBrand.Volksvagen);
                         case "scania":
                             return FindBus(Bus.BusBrand.Scania);
-
                         case "kugoo":
                             return FindScooter(Scooter.ScooterBrand.Kugoo);
                         case "razor":
@@ -89,7 +87,6 @@ namespace NetCollections
                             return FindScooter(Scooter.ScooterBrand.Jetson);
                         case "gotrax":
                             return FindScooter(Scooter.ScooterBrand.GoTrax);
-                        
                         default:
                             throw new GetAutoByParameterException("Cannot add by parameter");
                     }
@@ -122,58 +119,6 @@ namespace NetCollections
             }
         }
 
-        private PassengerCar FindCar(PassengerCar.CarBrand brand)
-        {
-            foreach (var car in this.Cars)
-            {
-                if (car.GetBrand() == brand)
-                {
-                    return car;
-                }
-            }
-
-            return null;
-        }
-
-        private Truck FindTruck(Truck.TruckBrand brand)
-        {
-            foreach (var truck in this.Trucks)
-            {
-                if (truck.GetBrand() == brand)
-                {
-                    return truck;
-                }
-            }
-
-            return null;
-        }
-
-        private Bus FindBus(Bus.BusBrand brand)
-        {
-            foreach (var bus in this.Buses)
-            {
-                if (bus.GetBrand() == brand)
-                {
-                    return bus;
-                }
-            }
-
-            return null;
-        }
-
-        private Scooter FindScooter(Scooter.ScooterBrand brand)
-        {
-            foreach (var scooter in this.Scooters)
-            {
-                if (scooter.GetBrand() == brand)
-                {
-                    return scooter;
-                }
-            }
-
-            return null;
-        }        
-
         public void Update(Vehicle vehicle, int index)
         {
             try
@@ -203,26 +148,23 @@ namespace NetCollections
 
         public void Remove(Vehicle vehicle)
         {
-            try
+            if (vehicle is PassengerCar car)
             {
-                if (vehicle is PassengerCar car)
-                {
-                    this.Cars.Remove(car);
-                }
-                else if (vehicle is Truck truck)
-                {
-                    this.Trucks.Remove(truck);
-                }
-                else if (vehicle is Bus bus)
-                {
-                    this.Buses.Remove(bus);
-                }
-                else if (vehicle is Scooter scooter)
-                {
-                    this.Scooters.Remove(scooter);
-                }
+                this.Cars.Remove(car);
             }
-            catch
+            else if (vehicle is Truck truck)
+            {
+                this.Trucks.Remove(truck);
+            }
+            else if (vehicle is Bus bus)
+            {
+                this.Buses.Remove(bus);
+            }
+            else if (vehicle is Scooter scooter)
+            {
+                this.Scooters.Remove(scooter);
+            }
+            else
             {
                 throw new UpdateException("Cannot update!");
             }
@@ -230,8 +172,7 @@ namespace NetCollections
 
         public void CreateEngineCapcityXml()
         {
-            using (var writer = new StreamWriter("C:\\Users\\Xusniddin\\Desktop\\Khusniddin\\IT" +
-                "\\Automed Testing\\Local Repo\\ATF-practical-tasks-private\\NetCollections\\engineCapacity.xml"))
+            using (var writer = new StreamWriter("engineCapacity.xml"))
             {
                 writer.WriteLine("<vehicles>");
 
@@ -240,8 +181,8 @@ namespace NetCollections
                     if (car.Engine.Capacity > 1.5)
                     {
                         WriteAllEngineInfo(car, writer);
-                    }                    
-                }   
+                    }
+                }
 
                 foreach (var truck in Trucks)
                 {
@@ -259,8 +200,7 @@ namespace NetCollections
 
         public void CreateEngineOfBusesAndTrucksXml()
         {
-            using (var writer = new StreamWriter("C:\\Users\\Xusniddin\\Desktop\\Khusniddin\\IT" +
-                "\\Automed Testing\\Local Repo\\ATF-practical-tasks-private\\NetCollections\\engineOfBusesAndTrucks.xml"))
+            using (var writer = new StreamWriter("engineCapacity.xml"))
             {
                 writer.WriteLine("<vehicles>");
 
@@ -280,8 +220,7 @@ namespace NetCollections
 
         public void CreateTransmissionXml()
         {
-            using (var writer = new StreamWriter("C:\\Users\\Xusniddin\\Desktop\\Khusniddin\\IT" +
-                "\\Automed Testing\\Local Repo\\ATF-practical-tasks-private\\NetCollections\\transmission.xml"))
+            using (var writer = new StreamWriter("engineCapacity.xml"))
             {
                 writer.WriteLine("<vehicles>");
                 writer.WriteLine("\t<transmission>");
@@ -308,8 +247,60 @@ namespace NetCollections
 
                 writer.WriteLine("\t<transmission>");
                 writer.WriteLine("<\\vehicles>");
-            }    
+            }
         }
+
+        private PassengerCar? FindCar(PassengerCar.CarBrand brand)
+        {
+            foreach (var car in this.Cars)
+            {
+                if (car.GetBrand() == brand)
+                {
+                    return car;
+                }
+            }
+
+            return null;
+        }
+
+        private Truck? FindTruck(Truck.TruckBrand brand)
+        {
+            foreach (var truck in this.Trucks)
+            {
+                if (truck.GetBrand() == brand)
+                {
+                    return truck;
+                }
+            }
+
+            return null;
+        }
+
+        private Bus? FindBus(Bus.BusBrand brand)
+        {
+            foreach (var bus in this.Buses)
+            {
+                if (bus.GetBrand() == brand)
+                {
+                    return bus;
+                }
+            }
+
+            return null;
+        }
+
+        private Scooter? FindScooter(Scooter.ScooterBrand brand)
+        {
+            foreach (var scooter in this.Scooters)
+            {
+                if (scooter.GetBrand() == brand)
+                {
+                    return scooter;
+                }
+            }
+
+            return null;
+        }        
         
         private void WriteAllEngineInfo(Vehicle vehicle, StreamWriter writer)
         {

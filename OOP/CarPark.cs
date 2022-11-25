@@ -1,4 +1,5 @@
 ﻿using OOP.Vehicles;
+using OOP.VehicleParts;
 
 namespace CarPark
 {
@@ -11,6 +12,8 @@ namespace CarPark
 
         public static void Main(string[] args)
         {
+            SolveNetCollectionsTask();
+
             SetShriftColor();
             var passengerCar = new PassengerCar();
             Console.Write(passengerCar.GetInfo());
@@ -33,8 +36,6 @@ namespace CarPark
 
             SetShriftColor();
             Console.Write("The End...!");
-
-            SolveNetCollectionsTask();
         }
 
         private static void SetShriftColor()
@@ -50,17 +51,38 @@ namespace CarPark
             for (int i = 1; i < 11; i++)
             {
                 Console.Write($"{i} ");
-                Thread.Sleep(1000);
+               /// Thread.Sleep(1000);
             }
         }
 
         private static void SolveNetCollectionsTask()
         {
             var carPark = new NetCollections.Collection();
-            carPark.Add(new PassengerCar(), Random.Next(1, 7));
-            carPark.Add(new Truck(), Random.Next(1, 7));
-            carPark.Add(new Bus(), Random.Next(1, 7));
-            carPark.Add(new Scooter(), Random.Next(1, 7));
+            int lowerBound = 1;
+            int upperBound = 7;
+
+            // InitializaionException
+            /// var chassis = new Chassis(wheelsNumber: 0);
+            /// var engine = new Engine();
+            /// var transmission = new Transmission();
+            /// carPark.Add(new Truck(Truck.TruckBrand.MAN, chassis, engine, transmission));
+
+            // AddException 
+            /// carPark.Add(null);
+
+            // GetAutoByParameterException
+            /// carPark.GetAutoByParameter(parameter: "brand", value: "mtz");
+
+            // UpdateException
+            /// var scooter = new Scooter();
+            /// carPark.Add(scooter, Random.Next(lowerBound, upperBound));
+            /// carPark.Update(vehicle: new Scooter(), index: 7);
+
+            /// carPark.Remove(new Bus());
+
+            carPark.Add(new PassengerCar(), Random.Next(lowerBound, upperBound));
+            carPark.Add(new Truck(), Random.Next(lowerBound, upperBound));
+            carPark.Add(new Bus(), Random.Next(lowerBound, upperBound));
 
             carPark.CreateEngineCapcityXml();
             carPark.CreateEngineOfBusesAndTrucksXml();

@@ -90,10 +90,7 @@ namespace OOP.VehicleParts
             return result.ToString();
         }
 
-        public string GetInfo()
-        {
-            return "Engine Info --- " + this.ToString();
-        }
+        public string GetInfo() => $"Engine Info --- {this}";
 
         public override string ToString()
         {
