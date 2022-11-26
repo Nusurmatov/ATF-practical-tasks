@@ -1,8 +1,13 @@
 ﻿namespace DevelopmentAndBuildTools
 {
-    public class ConsecutiveChars
+    public static class ConsecutiveChar
     {
-        static int GetTotalConsecutiveUnequalChars(string text)
+        private static void Main()
+        {
+            //
+        }
+
+        public static int GetTotalConsecutiveUnequalChars(string text)
         {
             if (String.IsNullOrEmpty(text))
             {
@@ -39,7 +44,7 @@
             return max;
         }
 
-        static int GetMaxConcsecutiveIndenticalLatinLetters(string text)
+        public static int GetTotalConcsecutiveIndenticalLatinLetters(string text)
         {
             if (String.IsNullOrEmpty(text))
             {
@@ -49,12 +54,12 @@
             int max = 0;
             int count = 0;
             bool undone = true;
-            
+
             while (undone)
             {
                 for (int i = 0; i < text.Length - 1; i++)
                 {
-                    if (IsLatinLatter(text[i]) && (text[i+1] == text[i]))
+                    if (IsLatinLatter(text[i]) && (text[i + 1] == text[i]))
                     {
                         count++;
                     }
@@ -75,22 +80,26 @@
             return max;
         }
 
-        static int GetMaxConsecutiveIdenticalDigits(string text)
+        public static int GetTotalConsecutiveIdenticalDigits(string text)
         {
             if (String.IsNullOrEmpty(text))
             {
                 throw new ArgumentNullException(nameof(text));
             }
+            else if (!text.Any(Char.IsDigit))
+            {
+                return 0;
+            }
 
             int max = 0;
-            int count = 0;
+            int count = 1;
             bool undone = true;
 
             while (undone)
             {
                 for (int i = 0; i < text.Length - 1; i++)
                 {
-                    if (Char.IsDigit(text[i]) && (text[i + 1] == text[i]))
+                    if (Char.IsDigit(text[i]) && (text[i] == text[i + 1]))
                     {
                         count++;
                     }
@@ -107,7 +116,7 @@
 
                 undone = false;
             }
-            
+
             return max;
         }
 

@@ -62,10 +62,10 @@ namespace CarPark
             int upperBound = 7;
 
             // InitializaionException
-            /// var chassis = new Chassis(wheelsNumber: 0);
-            /// var engine = new Engine();
-            /// var transmission = new Transmission();
-            /// carPark.Add(new Truck(Truck.TruckBrand.MAN, chassis, engine, transmission));
+            var chassis = new Chassis(wheelsNumber: 0);
+            var engine = new Engine();
+            var transmission = new Transmission();
+            carPark.Add(new Truck(Truck.TruckBrand.MAN, chassis, engine, transmission));
 
             // AddException 
             /// carPark.Add(null);
