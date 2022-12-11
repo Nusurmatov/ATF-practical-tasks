@@ -17,14 +17,20 @@ namespace Locators
             var driverDir = System.IO.Path.GetDirectoryName(typeof(LocatorTests).Assembly.Location);
             driver = new ChromeDriver(driverDir);
             driver?.Navigate().GoToUrl("https://www.bbc.com/sport");
-        }
+            
+	        if (driver != null)
+            {
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            }
+	    }
 
         [Test]
         public void LinkTextLocatorTest()
         {
             // Search Box
-            this.Wait(seconds: 30);
-            element = driver?.FindElement(By.LinkText("Search BBC"));
+            /// element = driver?.FindElement(By.LinkText("Search BBC"));
+            element = driver?.FindElement(By.XPath("//div[@aria-label='Search BBC']"));
+            
             element?.Click();
             driver?.FindElement(By.Id("search-input")).SendKeys("Qatar 2022");
 
@@ -35,8 +41,8 @@ namespace Locators
         public void CssSelectorLocatorTest()
         {
             // All Sports Button
-            this.Wait(seconds: 10);
-            driver?.FindElement(By.CssSelector("div.ssrcss-1kl7qyq-StyledToggle ekfn8591"));
+            /// driver?.FindElement(By.CssSelector("div.ssrcss-1kl7qyq-StyledToggle ekfn8591"));
+            driver?.FindElement(By.XPath("//a[@aria-controls='product-navigation-menu']"));
 
             Assert.Pass();
         }
@@ -45,8 +51,8 @@ namespace Locators
         public void XPathLocatorTest()
         {
             // BBC Icon
-            this.Wait(seconds: 30);
-            driver?.FindElement(By.XPath("//div[@class='ssrcss-g08l83-GlobalNavigationItem e1gviwgp23']")).Click();
+            /// driver?.FindElement(By.XPath("//div[@class='ssrcss-g08l83-GlobalNavigationItem e1gviwgp23']")).Click();
+            driver?.FindElement(By.XPath("//*[@aria-label='BBC']//a"));
 
             Assert.Pass();
         }
@@ -55,8 +61,9 @@ namespace Locators
         public void XPathAxesTest()
         {
             // All Sports Button
-            this.Wait(seconds: 30);
-            element = driver?.FindElement(By.XPath("//div[@class='ssrcss-cvutxg-ToggleContainer enbola60']/child::a"));
+            /// element = driver?.FindElement(By.XPath("//div[@class='ssrcss-cvutxg-ToggleContainer enbola60']/child::a"));
+            driver?.FindElement(By.XPath("//div[@id='product-navigation-menu']/descendant::a[1]"));
+           
             element?.Click();
 
             Assert.Pass();
@@ -68,14 +75,6 @@ namespace Locators
             if (driver != null)
             {
                 driver.Quit();
-            }
-        }
-
-        private void Wait(int seconds)
-        {
-            if (driver != null)
-            {
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(seconds);
             }
         }
     }
