@@ -2,12 +2,10 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using WebDriverDotNet.Pages;
-using System;
 using WebDriverDotNet.Helpers;
 
 namespace WebDriverDotNet.Tests
 {
-    [TestFixture]
     public sealed class OutlookTests
     {
         IWebDriver? browser;
@@ -25,6 +23,7 @@ namespace WebDriverDotNet.Tests
         {
             // Wrong Email
             outlook?.LoginPage.EnterEmail("wrong");
+            
             Assert.IsTrue(outlook?.LoginPage.ErrorEmailText.Displayed);
 
             // Empty Email
@@ -43,7 +42,7 @@ namespace WebDriverDotNet.Tests
             // Correct password
             outlook?.LoginPage.EnterPassword(outlook.LoginPage.Password);
             outlook?.LoginPage.NoIcon.Click();
-            Assert.IsTrue(outlook?.IsDisplayed(outlook.NewMailIcon));
+            Assert.IsTrue(outlook?.NewMailIcon.Displayed);
         }
 
         [Test]

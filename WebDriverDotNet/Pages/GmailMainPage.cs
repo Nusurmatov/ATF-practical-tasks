@@ -27,7 +27,7 @@ namespace WebDriverDotNet.Pages
 
         public ReadOnlyCollection<IWebElement> UnreadMails => Driver.FindElements(UnreadMailsLoc); 
 
-        public IWebElement MessageBox => Driver.FindElement(By.XPath($"//span[contains(text(), '{this.NewMail?.SecretPassword}')]")); 
+        public IWebElement MessageBox => Driver.FindElement(By.XPath($"//span[contains(@style, 'font-family')]")); 
 
         public IWebElement ComposeIcon => Driver.FindElement(ComposeIconLoc);
 

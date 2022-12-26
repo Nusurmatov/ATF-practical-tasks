@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using System.Collections.ObjectModel;
 
 namespace WebDriverDotNet.Pages
 {
@@ -15,7 +16,7 @@ namespace WebDriverDotNet.Pages
             LoginPage = new GmailLoginPage(browser);
         }
 
-        private readonly By GoToGoogleAccountIconLoc = By.XPath("/html/body/header/div[1]/div[5]/ul/li[2]");
+        private readonly By GoToGoogleAccountIconLoc = By.XPath("//li[not(contains(@class, 'mobile')) and not(contains(@class, 'drawer'))]//*[@aria-label='Go to your Google Account']");
 
         private readonly By PersonalInfoLoc = By.XPath("//li[@class='BBRNg'][2]");
 
@@ -27,7 +28,7 @@ namespace WebDriverDotNet.Pages
 
         public readonly By NickNameTextBoxLoc = By.XPath("//span[text()='Nickname']/following::input[@type='text']");
 
-        public readonly By NickNameTextLoc = By.XPath("//div[contains(text(),'Nickname')]/following-sibling::div");
+        public readonly By NickNameTextLoc = By.XPath("//c-wiz[(contains(@aria-busy, 'false'))]/descendant::div[contains(text(),'Nickname')]/following-sibling::div");
 
         public IWebElement GoToGoogleAccount => Driver.FindElement(GoToGoogleAccountIconLoc);
 

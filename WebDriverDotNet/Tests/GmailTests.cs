@@ -3,13 +3,11 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using WebDriverDotNet.Pages;
 using System;
-using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using WebDriverDotNet.Helpers;
 
 namespace WebDriverDotNet.Tests
 {
-    [TestFixture]
     public sealed class GmailTests
     {
         IWebDriver? browser;
@@ -68,6 +66,7 @@ namespace WebDriverDotNet.Tests
 
             gmail?.Wait.Until(ExpectedConditions.StalenessOf(gmail?.UnreadMails[0]));
             gmail?.UnreadMails[0].Click();
+            Console.WriteLine(gmail?.MessageBox.Text);
             Assert.IsTrue(gmail?.MessageBox.Text.Contains(mail.SecretPassword));
         }
 
@@ -98,6 +97,7 @@ namespace WebDriverDotNet.Tests
             gmailAccount?.NickNameTextBox.SendKeys(newNickName);
             gmailAccount?.SaveNickName.Click();
 
+            Console.WriteLine(gmailAccount?.NickNameText.Text);
             Assert.AreEqual(newNickName, gmailAccount?.NickNameText.Text);
         }
 

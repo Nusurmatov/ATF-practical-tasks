@@ -71,7 +71,6 @@ namespace WebDriverDotNet.Pages
         {
             try
             {
-                Waits.ImplicitWait(this.Driver, seconds: 10);
                 bool result = element.Displayed;
                 return result;
             }
