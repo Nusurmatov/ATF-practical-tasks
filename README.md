@@ -4,4 +4,4 @@
 All names of directories correspond with modules that have practical tasks. 
 Each directory contains taskDescription.txt file that has information about tasks.
 There is only one exception directory for .NET Collections module is in OOP directory,
-is its practical task is based on the tasks in the OOP module.
+as its practical task is based on the tasks in the OOP module.
